@@ -20,7 +20,7 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
-        <Link href="/" className="mr-6 flex items-center space-x-2">
+        <Link href="/" className="mr-6 flex items-center space-x-2" legacyBehavior>
           {/* You can add a logo here if you have one */}
           <span className="font-bold sm:inline-block">WilsonIIRIP</span>
         </Link>
@@ -52,25 +52,41 @@ export function Navbar() {
         <div className="flex flex-1 items-center justify-end space-x-2">
           {/* Social Links */}
           <Button variant="ghost" size="icon" asChild>
-            <Link href="https://www.youtube.com/@wilsonrip" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://www.youtube.com/@wilsonrip"
+              target="_blank"
+              rel="noopener noreferrer"
+              legacyBehavior>
               <Youtube className="h-5 w-5" />
               <span className="sr-only">YouTube</span>
             </Link>
           </Button>
           <Button variant="ghost" size="icon" asChild>
-            <Link href="https://github.com/WilsonRIP" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://github.com/WilsonRIP"
+              target="_blank"
+              rel="noopener noreferrer"
+              legacyBehavior>
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
             </Link>
           </Button>
           <Button variant="ghost" size="icon" asChild>
-            <Link href="https://www.twitch.tv/wilsoniirip" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://www.twitch.tv/wilsoniirip"
+              target="_blank"
+              rel="noopener noreferrer"
+              legacyBehavior>
               <Twitch className="h-5 w-5" />
               <span className="sr-only">Twitch</span>
             </Link>
           </Button>
            <Button variant="ghost" size="icon" asChild>
-            <Link href="https://discord.gg/wKHnwHYgzF" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://discord.gg/wKHnwHYgzF"
+              target="_blank"
+              rel="noopener noreferrer"
+              legacyBehavior>
               <SiDiscord size={20} />
               <span className="sr-only">Discord</span>
             </Link>
